@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Calcolatrice scientifica</string>
+    <string name="app_name">Calcolatrice scientifica</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Calcolatrice</string>
     <string name="first_run_alert_cancel">Ciao</string>
     <string name="first_run_alert_continue">Continua</string>
     <string name="device_admin_desc">Servizio di isolazione app</string>
@@ -121,4 +125,18 @@
 \nCiò darà a Shelter numerose autorizzazioni all\'interno del profilo, comparabili a quelle di un admin di dispositivo, ma pur sempre confinate nel profilo. Essere l\'amministratore del profilo è necessario perché Shelter funzioni correttamente.
 \n
 \nAlcune funzioni avanzate di Shelter potrebbero richiedere più autorizzazioni <b>fuori</b> dal Profilo di Lavoro. Se necessarie, Shelter le richiederà separatamente quando attivi le funzioni corrispondenti.</string>
+    <string name="calc_key_sound">Suono tasti</string>
+    <string name="calc_check_update">Controlla aggiornamenti</string>
+    <string name="calc_password_title">Sblocca spazio privato</string>
+    <string name="calc_password_hint">Password</string>
+    <string name="calc_password_set_title">Imposta password iniziale</string>
+    <string name="calc_password_confirm_hint">Conferma password</string>
+    <string name="calc_password_mismatch">Le password non corrispondono</string>
+    <string name="calc_password_incorrect">Password errata</string>
+    <string name="calc_password_set_success">Password impostata con successo</string>
+    <string name="calc_update_checking">Controllo aggiornamenti…</string>
+    <string name="calc_update_up_to_date">Sei aggiornato</string>
+    <string name="calc_unlock_title">Tocca "Calcolatrice" per sbloccare</string>
+    <string name="calc_unlock_prompt">Inserisci la password e tocca il titolo per sbloccare</string>
+    <string name="calc_about">Informazioni</string>
 </resources>

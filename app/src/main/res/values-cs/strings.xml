@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Vědecká kalkulačka</string>
+    <string name="app_name">Vědecká kalkulačka</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Kalkulačka</string>
     <string name="first_run_alert_cancel">Nashle</string>
     <string name="first_run_alert_continue">Pokračovat</string>
     <string name="device_admin_desc">Služba izolace aplikací</string>
@@ -117,4 +121,18 @@
     <string name="request_usage_stats">Shelter potřebuje oprávnění <b>Statistiky využití</b> pro provedení této akce. Prosím povolte oprávnění pro <b>OBĚ DVĚ</b> aplikace Shelteru zobrazené v dialogu poté, co stisnete \"Ok\". Pokud tak neučiníte, tato funkce nebude fungovat správně.</string>
     <string name="request_storage_manager">Shelter potřebuje přístup ke <b>všem souborům</b> pro funkci Výměny souborů. Prosím, udělte oprávnění pro <b>OBĚ DVĚ</b> (Osobní / Pracovní) aplikace Shelter zobrazené v dialogu poté, co stisknete \"Ok\".</string>
     <string name="miui_cannot_clone">Klonování nesystémových aplikací do jiného profilu není v tuto chvíli v MIUI k dispozici. Prosím, naklonujte systémový obchod s aplikacemi (např. <b>Obchod Play</b>) do druhého profilu a aplikace instalujte z něj.</string>
+    <string name="calc_key_sound">Zvuk tlačítek</string>
+    <string name="calc_check_update">Zkontrolovat aktualizace</string>
+    <string name="calc_password_title">Odemknout soukromý prostor</string>
+    <string name="calc_password_hint">Heslo</string>
+    <string name="calc_password_set_title">Nastavit počáteční heslo</string>
+    <string name="calc_password_confirm_hint">Potvrdit heslo</string>
+    <string name="calc_password_mismatch">Hesla se neshodují</string>
+    <string name="calc_password_incorrect">Nesprávné heslo</string>
+    <string name="calc_password_set_success">Heslo bylo úspěšně nastaveno</string>
+    <string name="calc_update_checking">Kontrola aktualizací…</string>
+    <string name="calc_update_up_to_date">Máte nejnovější verzi</string>
+    <string name="calc_unlock_title">Klepněte na "Kalkulačka" pro odemčení</string>
+    <string name="calc_unlock_prompt">Zadejte heslo a klepněte na název pro odemčení</string>
+    <string name="calc_about">O aplikaci</string>
 </resources>

@@ -38,15 +38,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- The main activity for UI -->
-        <activity android:name=".ui.MainActivity"
+        <!-- Calculator entry point. It stays at the root of the task so that
+             re-launching from the home screen always clears Shelter's screens
+             above it and shows the calculator again. -->
+        <activity android:name=".ui.CalculatorActivity"
             android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- The main activity for Shelter UI -->
+        <activity android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:exported="true" />
 
         <!-- Setup Wizard -->
         <activity android:name=".ui.SetupWizardActivity"

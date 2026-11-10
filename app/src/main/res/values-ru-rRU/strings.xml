@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Инженерный калькулятор</string>
+    <string name="app_name">Инженерный калькулятор</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Калькулятор</string>
     <string name="first_run_alert">Сейчас Shelter будет настроен.
 \n
 \nЭто приложение зависит от реализации <b>Рабочего профиля</b> системой Android для изоляции приложений. Если ваш производитель / кастомная прошивка не поддерживают эту функцию или сломали ее (как, например, MIUI), вам следует <b>ВЫЙТИ</b> и <b>НЕ ИСПОЛЬЗОВАТЬ</b> это приложение.
@@ -127,4 +131,18 @@
     <string name="allow_cross_profile_interaction">Разрешить работу между профилями</string>
     <string name="settings_payment_stub_desc">Чтобы получить возможность выбрать платёжное приложение внутри рабочего профиля в Настройки - NFC, включите фальшивый платёжный сервис NFC в основном профиле. Это временное решение ошибки Android, из-за которой невозможно выбрать платёжное приложение внутри рабочего профиля, если в основном профиле таких нет.</string>
     <string name="settings_payment_stub">Заглушка платёжных сервисов</string>
+    <string name="calc_key_sound">Звук клавиш</string>
+    <string name="calc_check_update">Проверить обновления</string>
+    <string name="calc_password_title">Разблокировать личное пространство</string>
+    <string name="calc_password_hint">Пароль</string>
+    <string name="calc_password_set_title">Установить начальный пароль</string>
+    <string name="calc_password_confirm_hint">Подтвердите пароль</string>
+    <string name="calc_password_mismatch">Пароли не совпадают</string>
+    <string name="calc_password_incorrect">Неверный пароль</string>
+    <string name="calc_password_set_success">Пароль успешно установлен</string>
+    <string name="calc_update_checking">Проверка обновлений…</string>
+    <string name="calc_update_up_to_date">У вас последняя версия</string>
+    <string name="calc_unlock_title">Нажмите "Калькулятор" для разблокировки</string>
+    <string name="calc_unlock_prompt">Введите пароль и нажмите на заголовок для разблокировки</string>
+    <string name="calc_about">О приложении</string>
 </resources>

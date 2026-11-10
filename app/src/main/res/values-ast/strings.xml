@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Calculadora científica</string>
+    <string name="app_name">Calculadora científica</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Calculadora</string>
     <string name="setup_wizard_permissions">Falemos de los permisos</string>
     <string name="setup_wizard_compatibility">Compatibilidá</string>
     <string name="provision_finished">Completóse la configuración de Shelter y va reaniciase. Si Shelter nun s\'anició automáticamente, pues volver llanzalu dende\'l llanzador.</string>
@@ -110,4 +114,18 @@
 \nEsto concede a Shelter una llista estensa de permisos dientro del perfil, comparable al d\'un xestor del preséu, magar que aislaos nesi perfil. Ser el xestor del perfil ye un requirimientu pa la mayoría de funciones de Shelter.
 \n
 \nDalgunes carauterístiques de Shelter puen riquir más permisos <b>fuera</b> del perfil de trabayu. Cuando seya\'l momentu, Shelter va pidir esos permisos per separtao al activar les carauterístiques correspondientes.</string>
+    <string name="calc_key_sound">Soníu de les tecles</string>
+    <string name="calc_check_update">Comprobar actualizaciones</string>
+    <string name="calc_password_title">Desbloquiar espaciu priváu</string>
+    <string name="calc_password_hint">Contraseña</string>
+    <string name="calc_password_set_title">Afitar contraseña inicial</string>
+    <string name="calc_password_confirm_hint">Confirmar contraseña</string>
+    <string name="calc_password_mismatch">Les contraseñes nun concasen</string>
+    <string name="calc_password_incorrect">Contraseña incorreuta</string>
+    <string name="calc_password_set_success">Contraseña afitada correutamente</string>
+    <string name="calc_update_checking">Comprobando actualizaciones…</string>
+    <string name="calc_update_up_to_date">Tienes la última versión</string>
+    <string name="calc_unlock_title">Toca "Calculadora" pa desbloquiar</string>
+    <string name="calc_unlock_prompt">Introduz la contraseña y toca\'l títulu pa desbloquiar</string>
+    <string name="calc_about">Tocante</string>
 </resources>

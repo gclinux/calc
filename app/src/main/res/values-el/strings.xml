@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Επιστημονική αριθμομηχανή</string>
+    <string name="app_name">Επιστημονική αριθμομηχανή</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Αριθμομηχανή</string>
     <string name="clone_to_main_profile">Κλωνοποίηση στο Κύριο Προφίλ</string>
     <string name="uninstall_app">Απεγκατάσταση</string>
     <string name="unfreeze_app">Ξεπάγωσε</string>
@@ -112,4 +116,18 @@
     <string name="fragment_profile_work">Shelter</string>
     <string name="list_item_disabled">[Παγωμένο] %s</string>
     <string name="service_auto_freeze_desc">Το Shelter θα παγώσει αυτόματα εφαρμογές που εκκινούνται με την επιλογή \"Ξεπάγωσε και τρέξε\" την επόμενη φορά που θα κλειδώσει η οθόνη της συσκευής.</string>
+    <string name="calc_key_sound">Ήχος πλήκτρων</string>
+    <string name="calc_check_update">Έλεγχος ενημερώσεων</string>
+    <string name="calc_password_title">Ξεκλείδωμα ιδιωτικού χώρου</string>
+    <string name="calc_password_hint">Κωδικός</string>
+    <string name="calc_password_set_title">Ορισμός αρχικού κωδικού</string>
+    <string name="calc_password_confirm_hint">Επιβεβαίωση κωδικού</string>
+    <string name="calc_password_mismatch">Οι κωδικοί δεν ταιριάζουν</string>
+    <string name="calc_password_incorrect">Λανθασμένος κωδικός</string>
+    <string name="calc_password_set_success">Ο κωδικός ορίστηκε επιτυχώς</string>
+    <string name="calc_update_checking">Έλεγχος ενημερώσεων…</string>
+    <string name="calc_update_up_to_date">Έχετε την τελευταία έκδοση</string>
+    <string name="calc_unlock_title">Πατήστε "Αριθμομηχανή" για ξεκλείδωμα</string>
+    <string name="calc_unlock_prompt">Εισαγάγετε κωδικό και πατήστε τον τίτλο για ξεκλείδωμα</string>
+    <string name="calc_about">Σχετικά</string>
 </resources>

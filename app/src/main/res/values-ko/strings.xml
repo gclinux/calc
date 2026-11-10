@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">공학용 계산기</string>
+    <string name="app_name">공학용 계산기</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">계산</string>
     <string name="setup_wizard_welcome">Shelter에 어서오세요</string>
     <string name="first_run_alert_cancel">돌아가기</string>
     <string name="first_run_alert_continue">계속 진행</string>
@@ -116,4 +120,18 @@
     <string name="settings_payment_stub_desc">개인 프로필에 모의 NFC 결제 서비스를 추가하여 [설정] - [NFC]의 비접촉 결제 옵션을 활성화합니다. 개인 프로필에 설치된 결제 앱이 없을 경우 직장 프로필에 있는 앱의 비접촉 결제 서비스 사용이 불가능한 Android 상 버그를 우회하기 위한 기능입니다.</string>
     <string name="allow_cross_profile_interaction">프로필 간 상호 동작 허용</string>
     <string name="settings_payment_stub">모의 결제 서비스</string>
+    <string name="calc_key_sound">키 소리</string>
+    <string name="calc_check_update">업데이트 확인</string>
+    <string name="calc_password_title">개인 공간 잠금 해제</string>
+    <string name="calc_password_hint">비밀번호</string>
+    <string name="calc_password_set_title">초기 비밀번호 설정</string>
+    <string name="calc_password_confirm_hint">비밀번호 확인</string>
+    <string name="calc_password_mismatch">비밀번호가 일치하지 않습니다</string>
+    <string name="calc_password_incorrect">비밀번호가 올바르지 않습니다</string>
+    <string name="calc_password_set_success">비밀번호가 설정되었습니다</string>
+    <string name="calc_update_checking">업데이트 확인 중…</string>
+    <string name="calc_update_up_to_date">최신 버전입니다</string>
+    <string name="calc_unlock_title">"계산기"를 탭하여 잠금 해제</string>
+    <string name="calc_unlock_prompt">비밀번호를 입력하고 제목을 탭하여 잠금 해제</string>
+    <string name="calc_about">정보</string>
 </resources>

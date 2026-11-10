@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Kalkulator naukowy</string>
+    <string name="app_name">Kalkulator naukowy</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Kalkulator</string>
     <string name="first_run_alert_cancel">Anuluj</string>
     <string name="first_run_alert_continue">Kontynuuj</string>
     <string name="device_admin_desc">Usługa izolowania aplikacji</string>
@@ -121,4 +125,18 @@
 \n
 \nBy zresetować Sheltera i zacząć od nowa możesz wyczyścić dane Sheltera w Ustawieniach.</string>
     <string name="setup_wizard_ready">Gotowy/a?</string>
+    <string name="calc_key_sound">Dźwięk klawiszy</string>
+    <string name="calc_check_update">Sprawdź aktualizacje</string>
+    <string name="calc_password_title">Odblokuj prywatną przestrzeń</string>
+    <string name="calc_password_hint">Hasło</string>
+    <string name="calc_password_set_title">Ustaw hasło początkowe</string>
+    <string name="calc_password_confirm_hint">Potwierdź hasło</string>
+    <string name="calc_password_mismatch">Hasła nie pasują do siebie</string>
+    <string name="calc_password_incorrect">Nieprawidłowe hasło</string>
+    <string name="calc_password_set_success">Hasło zostało ustawione pomyślnie</string>
+    <string name="calc_update_checking">Sprawdzanie aktualizacji…</string>
+    <string name="calc_update_up_to_date">Masz najnowszą wersję</string>
+    <string name="calc_unlock_title">Stuknij "Kalkulator" aby odblokować</string>
+    <string name="calc_unlock_prompt">Wprowadź hasło i stuknij tytuł, aby odblokować</string>
+    <string name="calc_about">O aplikacji</string>
 </resources>

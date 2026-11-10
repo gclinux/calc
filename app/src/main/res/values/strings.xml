@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name" translatable="false">Shelter</string>
+    <string name="app_name">科学计算器</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Calculator</string>
     <string name="first_run_alert_cancel">Bye</string>
     <string name="first_run_alert_continue">Continue</string>
-    <string name="device_admin_label" translatable="false">Shelter</string>
+    <string name="device_admin_label">科学计算器</string>
     <string name="device_admin_desc">App Isolation Service</string>
     <string name="device_admin_explanation">Shelter needs to become Device Admin in order to perform its isolation tasks.</string>
     <string name="payment_stub_description">Payment Service Stub (DO NOT USE)</string>
@@ -115,6 +117,21 @@
     <string name="miui_cannot_clone">Cloning non-system apps to another profile is currently not possible on MIUI. Please clone your system\'s app store (e.g. <b>Play Store</b>) into the other profile and then install apps from there.</string>
     <string name="continue_anyway">Continue anyway</string>
 
-    <!-- Formats -->
     <string name="format_minutes">%d min</string>
+
+    <!-- Calculator -->
+    <string name="calc_key_sound">Key Sound</string>
+    <string name="calc_check_update">Check for Updates</string>
+    <string name="calc_password_title">Unlock Private Space</string>
+    <string name="calc_password_hint">Password</string>
+    <string name="calc_password_set_title">Set Initial Password</string>
+    <string name="calc_password_confirm_hint">Confirm Password</string>
+    <string name="calc_password_mismatch">Passwords do not match</string>
+    <string name="calc_password_incorrect">Incorrect password</string>
+    <string name="calc_password_set_success">Password set successfully</string>
+    <string name="calc_update_checking">Checking for updates…</string>
+    <string name="calc_update_up_to_date">You are up to date</string>
+    <string name="calc_unlock_title">Tap "Calculate" to unlock</string>
+    <string name="calc_unlock_prompt">Enter password and tap the title to unlock</string>
+    <string name="calc_about">About</string>
 </resources>

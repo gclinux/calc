@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">ماشین حساب علمی</string>
+    <string name="app_name">ماشین حساب علمی</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">ماشین حساب</string>
     <string name="freeze_all_shortcut">قفل</string>
     <string name="install_app_to_profile_success">نصب اپلیکیشن داخل پروفایل کاری تمام شد.</string>
     <string name="show_all">نمایش تمام برنامه‌ها</string>
@@ -112,4 +116,18 @@
     <string name="request_system_alert">شلتر نیازمند <b>نمایش روی دیگر برنامه‌ها</b> است تا شاتل فایل به درستی عمل کند. لطفا پس از زدن روی \"Ok\" در دیالوگ نمایش داده شده این دسترسی را برای <b>هر دوی</b> برنامه‌های شلتر فعال کنید. این دسترسی امکان راه‌اندازی سرویس‌های شاتل فایل در پس زمینه را میدهد.</string>
     <string name="miui_cannot_clone">کپی کردن برنامه‌های سیستمی به پروفایل دیگر در حال حاضر در MIUI امکان‌پذیر نیست. لطفا اپلیکیشن فروشگاه برنامه‌های سیستم خود (مانند <b>Play Store</b>) را به یک پروفایل دیگر کپی کنید سپس برنامه‌ها را از آنجا نصب کنید.</string>
     <string name="continue_anyway">ادامه دادن</string>
+    <string name="calc_key_sound">صدای دکمه‌ها</string>
+    <string name="calc_check_update">بررسی به‌روزرسانی</string>
+    <string name="calc_password_title">باز کردن فضای خصوصی</string>
+    <string name="calc_password_hint">رمز عبور</string>
+    <string name="calc_password_set_title">تنظیم رمز عبور اولیه</string>
+    <string name="calc_password_confirm_hint">تأیید رمز عبور</string>
+    <string name="calc_password_mismatch">رمزهای عبور مطابقت ندارند</string>
+    <string name="calc_password_incorrect">رمز عبور نادرست است</string>
+    <string name="calc_password_set_success">رمز عبور با موفقیت تنظیم شد</string>
+    <string name="calc_update_checking">در حال بررسی به‌روزرسانی…</string>
+    <string name="calc_update_up_to_date">شما آخرین نسخه را دارید</string>
+    <string name="calc_unlock_title">برای باز کردن "ماشین حساب" را بزنید</string>
+    <string name="calc_unlock_prompt">رمز عبور را وارد کنید و برای باز کردن روی عنوان ضربه بزنید</string>
+    <string name="calc_about">درباره</string>
 </resources>

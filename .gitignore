@@ -77,6 +77,13 @@ fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
 
+# Local release signing material and packaged artifacts (never commit secrets)
+*.jks
+*.keystore
+*.aab
+/dist/
+/.workbuddy-ai/
+
 # temporary google play repackaging tool
 repackage/*
 !repackage/repackage.sh

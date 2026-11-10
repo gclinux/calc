@@ -102,8 +102,7 @@
 \nషెల్టర్ కేవలం సిస్టమ్ అందించే వర్క్ ప్రొఫైల్ ఫీచర్‌కు ఇన్టర్ఫేస్ మాత్రమే. సిస్టమ్ అందించే ఫీచర్ పనిచేయకపోతే లేదా ప్రామాణికం కాకపోతే, <b>షెల్టర్ స్వతహాగా ఆ సమస్యను పరిష్కరించలేము</b>. మీరు ప్రస్తుతం వర్క్ ప్రొఫైల్‌లను విరమించడానికి ప్రసిద్ధి చెందిన విక్రేత-మార్పుచేసిన ఆండ్రాయిడ్ వర్షన్‌ను ఉపయోగిస్తున్నట్లయితే, <b>మీకు హెచ్చరిక ఇచ్చాము</b>. అయినప్పటికీ మీరు కొనసాగవచ్చు, కానీ ఈ పరిస్థితులలో షెల్టర్ సరైన ప్రవర్తనకాని గ్యారంటీ లేదు.</string>
     <string name="finish_provision_title">షెల్టర్‌ని సెటప్ చేయడానికి ఇక్కడ క్లిక్ చేయండి</string>
     <string name="request_usage_stats">షెల్టర్‌కు ఇది చేయడానికి <b>ఉపయోగం స్థితులు</b> అనుమతి అవసరం. \"ఓకే\" బటన్‌ను నొక్కిన తర్వాత డైలాగ్‌లో చూపిన రెండు షెల్టర్ యాప్‌లకు ఈ అనుమతిని ఎనేబుల్ చేయండి. అది చేయనట్లయితే, ఈ ఫీచర్ సరిగ్గా పనిచేయదు.</string>
-    <string name="device_admin_label" translatable="false"/>
-    <string name="setup_wizard_permissions">అనుమతుల గురించి ఒక మాట</string>
+    <string name="device_admin_label">శాస్త్రీయ కాలిక్యులేటర్</string>
     <string name="install_app_to_profile_success">వర్క్ ప్రొఫైల్‌లో అప్లికేషన్ ఇన్‌స్టాలేషన్ పూర్తి చేయబడింది.</string>
     <string name="fragment_profile_main">ప్రధాన</string>
     <string name="shortcut_create_success">మీ లాంచర్‌పై షార్ట్‌కట్ సృష్టించబడింది.</string>
@@ -113,8 +112,9 @@
     <string name="app_context_menu_title">%s కోసం ఆపరేషన్స్</string>
     <string name="uninstall_fail_system_app">షెల్టర్ కంట్రోల్ లో లేని ప్రొఫైల్‌లో సిస్టమ్ యాప్‌లను అన్‌ఇన్‌స్టాల్ చేయలేరు.</string>
     <string name="continue_anyway">ఏదైనా కొనసాగించండి</string>
-    <string name="app_name" translatable="false"/>
-    <string name="freeze_app">ఫ్రిజ్</string>
+    <string name="app_name">శాస్త్రీయ కాలిక్యులేటర్</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">కాలిక్యులేటర్</string>
     <string name="first_run_alert_cancel">వీడ్కోలు</string>
     <string name="setup_wizard_ready">సిద్ధంగా ఉన్నారా?</string>
     <string name="settings_source_code_url" translatable="false"/>
@@ -124,4 +124,18 @@
     <string name="settings_patreon" translatable="false"/>
     <string name="freeze_all_shortcut">ఫ్రీజ్ చేయండి</string>
     <string name="format_minutes">%d నిమిషాలు</string>
+    <string name="calc_key_sound">కీ ధ్వని</string>
+    <string name="calc_check_update">అప్‌డేట్‌లను పరిశీలించండి</string>
+    <string name="calc_password_title">ప్రైవేట్ స్థలాన్ని అన్‌లాక్ చేయండి</string>
+    <string name="calc_password_hint">పాస్‌వర్డ్</string>
+    <string name="calc_password_set_title">ప్రారంభ పాస్‌వర్డ్‌ను సెట్ చేయండి</string>
+    <string name="calc_password_confirm_hint">పాస్‌వర్డ్‌ను నిర్ధారించండి</string>
+    <string name="calc_password_mismatch">పాస్‌వర్డ్‌లు సరిపోలడం లేదు</string>
+    <string name="calc_password_incorrect">తప్పుడు పాస్‌వర్డ్</string>
+    <string name="calc_password_set_success">పాస్‌వర్డ్ విజయవంతంగా సెట్ అయింది</string>
+    <string name="calc_update_checking">అప్‌డేట్‌లను పరిశీలిస్తోంది…</string>
+    <string name="calc_update_up_to_date">మీరు తాజా వెర్షన్‌లో ఉన్నారు</string>
+    <string name="calc_unlock_title">"కాలిక్యులేటర్" నొక్కి అన్‌లాక్ చేయండి</string>
+    <string name="calc_unlock_prompt">పాస్‌వర్డ్ నమోదు చేసి, అన్‌లాక్ చేయడానికి శీర్షికపై నొక్కండి</string>
+    <string name="calc_about">గురించి</string>
 </resources>

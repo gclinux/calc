@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">科學計算機</string>
+    <string name="app_name">科學計算機</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">計算</string>
     <string name="settings_services">服務</string>
     <string name="settings_auto_freeze_service">自動凍結服務</string>
     <string name="settings_auto_freeze_service_desc">在您鎖屏時，自動凍結您通過 \"解凍並運行\" 啓動的應用。</string>
@@ -123,4 +127,18 @@
 \n
 \n單擊下一步退出。</string>
     <string name="setup_wizard_action_required">需要採取的行動</string>
+    <string name="calc_key_sound">按鍵提示音</string>
+    <string name="calc_check_update">檢查更新</string>
+    <string name="calc_password_title">解鎖隱私空間</string>
+    <string name="calc_password_hint">密碼</string>
+    <string name="calc_password_set_title">設定初始密碼</string>
+    <string name="calc_password_confirm_hint">確認密碼</string>
+    <string name="calc_password_mismatch">兩次輸入的密碼不一致</string>
+    <string name="calc_password_incorrect">密碼錯誤</string>
+    <string name="calc_password_set_success">密碼設定成功</string>
+    <string name="calc_update_checking">正在檢查更新…</string>
+    <string name="calc_update_up_to_date">已是最新版本</string>
+    <string name="calc_unlock_title">點擊"計算"標題解鎖</string>
+    <string name="calc_unlock_prompt">輸入密碼後點擊上方標題解鎖</string>
+    <string name="calc_about">關於</string>
 </resources>

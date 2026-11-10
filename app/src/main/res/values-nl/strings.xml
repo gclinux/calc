@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Wetenschappelijke rekenmachine</string>
+    <string name="app_name">Wetenschappelijke rekenmachine</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Rekenmachine</string>
     <string name="first_run_alert_cancel">Tot ziens</string>
     <string name="first_run_alert_continue">Ga verder</string>
     <string name="device_admin_explanation">Shelter moet beheerder van dit apparaat worden om zijn isolatietaken uit te voeren.</string>
@@ -84,4 +88,18 @@
     <string name="service_auto_freeze_title">Auto-bevriezen in afwachting</string>
     <string name="settings">Intellingen</string>
     <string name="settings_block_contacts_searching_desc">Verbied de toegang van het hoofdprofiel tot contacten in het werkprofiel.</string>
+    <string name="calc_key_sound">Toetsgeluid</string>
+    <string name="calc_check_update">Controleer op updates</string>
+    <string name="calc_password_title">Ontgrendel privéruimte</string>
+    <string name="calc_password_hint">Wachtwoord</string>
+    <string name="calc_password_set_title">Stel initiële wachtwoord in</string>
+    <string name="calc_password_confirm_hint">Bevestig wachtwoord</string>
+    <string name="calc_password_mismatch">Wachtwoorden komen niet overeen</string>
+    <string name="calc_password_incorrect">Onjuist wachtwoord</string>
+    <string name="calc_password_set_success">Wachtwoord succesvol ingesteld</string>
+    <string name="calc_update_checking">Controleren op updates…</string>
+    <string name="calc_update_up_to_date">Je bent up-to-date</string>
+    <string name="calc_unlock_title">Tik op "Rekenmachine" om te ontgrendelen</string>
+    <string name="calc_unlock_prompt">Voer wachtwoord in en tik op de titel om te ontgrendelen</string>
+    <string name="calc_about">Over</string>
 </resources>

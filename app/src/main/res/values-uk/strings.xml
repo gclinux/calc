@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Інженерний калькулятор</string>
+    <string name="app_name">Інженерний калькулятор</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Калькулятор</string>
     <string name="device_admin_desc">Сервіс ізоляції додатку</string>
     <string name="device_admin_explanation">Shelter має стати адміністратором пристрою, щоб виконувати свої завдання ізоляції.</string>
     <string name="first_run_alert_cancel">Закрити</string>
@@ -13,4 +17,18 @@
 \nМи рекомендуємо вам уважно прочитати всі наступні сторінки.</string>
     <string name="setup_wizard_please_wait_text">Ми намагаємося ініціалізувати Work Profile та налаштувати Shelter на вашому пристрої.</string>
     <string name="fragment_profile_work">Shelter</string>
+    <string name="calc_key_sound">Звук клавіш</string>
+    <string name="calc_check_update">Перевірити оновлення</string>
+    <string name="calc_password_title">Розблокувати приватний простір</string>
+    <string name="calc_password_hint">Пароль</string>
+    <string name="calc_password_set_title">Встановити початковий пароль</string>
+    <string name="calc_password_confirm_hint">Підтвердьте пароль</string>
+    <string name="calc_password_mismatch">Паролі не збігаються</string>
+    <string name="calc_password_incorrect">Неправильний пароль</string>
+    <string name="calc_password_set_success">Пароль успішно встановлено</string>
+    <string name="calc_update_checking">Перевірка оновлень…</string>
+    <string name="calc_update_up_to_date">У вас остання версія</string>
+    <string name="calc_unlock_title">Натисніть "Калькулятор" для розблокування</string>
+    <string name="calc_unlock_prompt">Введіть пароль і натисніть на заголовок для розблокування</string>
+    <string name="calc_about">Про програму</string>
 </resources>

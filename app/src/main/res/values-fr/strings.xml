@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Calculatrice scientifique</string>
+    <string name="app_name">Calculatrice scientifique</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Calculatrice</string>
     <string name="service_auto_freeze_now">Geler Maintenant</string>
     <string name="notifications_important">Shelter Important</string>
     <string name="first_run_alert_continue">Continuer</string>
@@ -121,4 +125,18 @@
     <string name="setup_wizard_ready_text">Nous sommes maintenant prêts à configurer Shelter pour vous. Veuillez d\'abord vous assurer que votre appareil n\'est <b>pas</b> en mode Ne pas déranger, car vous devrez <b>cliquer sur une notification</b> plus tard pour finaliser le processus de configuration.
 \n
 \nLorsque vous serez prêt(e), cliquez sur \"Suivant\" pour commencer le processus de configuration.</string>
+    <string name="calc_key_sound">Son des touches</string>
+    <string name="calc_check_update">Vérifier les mises à jour</string>
+    <string name="calc_password_title">Déverrouiller l\'espace privé</string>
+    <string name="calc_password_hint">Mot de passe</string>
+    <string name="calc_password_set_title">Définir le mot de passe initial</string>
+    <string name="calc_password_confirm_hint">Confirmer le mot de passe</string>
+    <string name="calc_password_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="calc_password_incorrect">Mot de passe incorrect</string>
+    <string name="calc_password_set_success">Mot de passe défini avec succès</string>
+    <string name="calc_update_checking">Vérification des mises à jour…</string>
+    <string name="calc_update_up_to_date">Vous êtes à jour</string>
+    <string name="calc_unlock_title">Appuyez sur "Calculatrice" pour déverrouiller</string>
+    <string name="calc_unlock_prompt">Entrez le mot de passe et appuyez sur le titre pour déverrouiller</string>
+    <string name="calc_about">À propos</string>
 </resources>

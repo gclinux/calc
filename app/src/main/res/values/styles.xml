@@ -45,6 +45,36 @@
         <item name="android:textColorPrimary">@color/colorAccent</item>
     </style>
 
+    <style name="CalcRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CalcButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="CalcButton.Number" parent="CalcButton">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:background">@drawable/calc_button_number</item>
+    </style>
+
+    <style name="CalcButton.Function" parent="CalcButton">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:background">@drawable/calc_button_function</item>
+    </style>
+
+    <style name="CalcButton.Operator" parent="CalcButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/calc_button_operator</item>
+    </style>
+
     <!-- For DummyActivity -->
     <style name="Theme.AppCompat.Translucent.NoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>

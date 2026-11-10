@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Calculadora científica</string>
+    <string name="app_name">Calculadora científica</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Calculadora</string>
     <string name="first_run_alert">Você esta a ponto de configurar o Shelter.
 \n
 \nEste aplicativo depende de <b>Perfil de Trabalho</b> recurso do Android que permite isolar os aplicativos. Se você usa um Stock / ROM personalizado que interfere nesta funcionalidade (por ex. MIUI), você deve <b>SAIR</b> agora e <b>NÃO</b> usar este app.
@@ -123,4 +127,18 @@
 \nSe você não vê a notificação, certifique-se de que seu dispositivo não está no modo \"Não Perturbe\" e tente recuperar ela da área de notificações deslizando de cima para baixo.
 \n
 \nPara reiniciar o Shelter e começar de novo, você pode limpar os dados em Configurações do app.</string>
+    <string name="calc_key_sound">Som das teclas</string>
+    <string name="calc_check_update">Verificar atualizações</string>
+    <string name="calc_password_title">Desbloquear espaço privado</string>
+    <string name="calc_password_hint">Senha</string>
+    <string name="calc_password_set_title">Definir senha inicial</string>
+    <string name="calc_password_confirm_hint">Confirmar senha</string>
+    <string name="calc_password_mismatch">As senhas não coincidem</string>
+    <string name="calc_password_incorrect">Senha incorreta</string>
+    <string name="calc_password_set_success">Senha definida com sucesso</string>
+    <string name="calc_update_checking">Verificando atualizações…</string>
+    <string name="calc_update_up_to_date">Você está atualizado</string>
+    <string name="calc_unlock_title">Toque em "Calculadora" para desbloquear</string>
+    <string name="calc_unlock_prompt">Digite a senha e toque no título para desbloquear</string>
+    <string name="calc_about">Sobre</string>
 </resources>

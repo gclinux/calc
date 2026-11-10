@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Máy tính khoa học</string>
+    <string name="app_name">Máy tính khoa học</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Máy tính</string>
     <string name="setup_wizard_failed_text">Chúng tôi rất tiếc phải thông báo cho bạn rằng chúng tôi đã không thể thiết lập Shelter cho bạn.
 \n
 \nNếu thiết bị của bạn đã có một Hồ sơ công việc được tạo từ Shelter hoặc một ứng dụng khác, bạn sẽ phải xoá hồ sơ đó trong Cài đặt -&gt; Tài khoản trước khi Shelter có thể tiếp tục.
@@ -112,4 +116,18 @@
     <string name="request_system_alert">Shelter cần <b>Hiện trên các ứng dụng khác</b> để Chia sẻ tệp hoạt động đúng. Vui lòng bật quyền đó cho <b>CẢ HAI</b> ứng dụng Shelter (Cá nhân / Công việc) được hiện trong hộp thoại sau khi bạn nhấn \"Ok\". Quyền này được sử dụng để khởi động các dịch vụ Chia sẻ tệp trong nền.</string>
     <string name="miui_cannot_clone">Việc nhân bản các ứng dụng không phải hệ thống vào một hồ sơ khác hiện chưa làm được trên MIUI. Vui lòng nhân bản cửa hàng ứng dụng của hệ thống (vd: <b>CH Play</b>) vào hồ sơ khác đó và sau đó là cài đặt các ứng dụng từ đó.</string>
     <string name="continue_anyway">Vẫn tiếp tục</string>
+    <string name="calc_key_sound">Âm thanh phím</string>
+    <string name="calc_check_update">Kiểm tra cập nhật</string>
+    <string name="calc_password_title">Mở khóa không gian riêng tư</string>
+    <string name="calc_password_hint">Mật khẩu</string>
+    <string name="calc_password_set_title">Đặt mật khẩu ban đầu</string>
+    <string name="calc_password_confirm_hint">Xác nhận mật khẩu</string>
+    <string name="calc_password_mismatch">Mật khẩu không khớp</string>
+    <string name="calc_password_incorrect">Mật khẩu không đúng</string>
+    <string name="calc_password_set_success">Đặt mật khẩu thành công</string>
+    <string name="calc_update_checking">Đang kiểm tra cập nhật…</string>
+    <string name="calc_update_up_to_date">Bạn đang sử dụng phiên bản mới nhất</string>
+    <string name="calc_unlock_title">Nhấn "Máy tính" để mở khóa</string>
+    <string name="calc_unlock_prompt">Nhập mật khẩu và nhấn vào tiêu đề để mở khóa</string>
+    <string name="calc_about">Giới thiệu</string>
 </resources>

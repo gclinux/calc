@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">科学计算器</string>
+    <string name="app_name">科学计算器</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">计算</string>
     <string name="first_run_alert">您正在使用 Shelter。\n\n这个应用依赖于 Android 的 <b>工作用户</b> 功能来隔离 App。如果你使用的厂商 / 自定义 ROM 破坏了这个功能 (如 MIUI)，您应该立即 <b>退出</b> 并且 <b>停止使用</b> 本应用。\n\n如果你选择继续，Shelter 将为您初始化工作用户。\n\n如果您是开发者并且希望将 Shelter 带到那些目前不能使用的 ROM 上，欢迎您提交 Pull Request。本应用的开发者对您在不兼容的 ROM 上运行该 App 带来的任何后果 <b>不负任何责任</b>。\n\n您将需要通过点击通知来完成初始化过程，请确保您的设备<b>没有开启</b>免打扰模式。</string>
     <string name="first_run_alert_cancel">再见</string>
     <string name="first_run_alert_continue">继续</string>
@@ -122,4 +126,18 @@
 \n如果您没有看到通知，请确保您的设备未处于“请勿打扰”模式并尝试下拉通知中心。
 \n
 \n要重置 Shelter 并重新开始，您可以在设置中清除 Shelter 的数据。</string>
+    <string name="calc_key_sound">按键提示音</string>
+    <string name="calc_check_update">检查更新</string>
+    <string name="calc_password_title">解锁隐私空间</string>
+    <string name="calc_password_hint">密码</string>
+    <string name="calc_password_set_title">设置初始密码</string>
+    <string name="calc_password_confirm_hint">确认密码</string>
+    <string name="calc_password_mismatch">两次输入的密码不一致</string>
+    <string name="calc_password_incorrect">密码错误</string>
+    <string name="calc_password_set_success">密码设置成功</string>
+    <string name="calc_update_checking">正在检查更新…</string>
+    <string name="calc_update_up_to_date">已是最新版本</string>
+    <string name="calc_unlock_title">点击"计算"标题解锁</string>
+    <string name="calc_unlock_prompt">输入密码后点击上方标题解锁</string>
+    <string name="calc_about">关于</string>
 </resources>

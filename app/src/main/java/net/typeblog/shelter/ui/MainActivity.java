@@ -65,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
     // Flag to avoid double-killing our services while restarting
     private boolean mRestarting = false;
 
+    // Guard so the pager/navigation is only built once, even when several
+    // service-binding paths fail and all fall back to the degraded view.
+    private boolean mViewBuilt = false;
+
     // Two services running in main / work profile
     private IShelterService mServiceMain = null;
     private IShelterService mServiceWork = null;
@@ -108,10 +112,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupWizardCb(Boolean result) {
-        if (result)
+        if (result) {
             init();
-        else
-            finish();
+            return;
+        }
+        // Setup was cancelled, or provisioning failed (e.g. the device has no
+        // managed-profile support, which is common on emulators).
+        // Upstream Shelter simply calls finish() here. With CalculatorActivity
+        // as the root of the launcher task, finishing drops the user straight
+        // back to the calculator; the next unlock starts the wizard again and
+        // the user is trapped in a loop, never reaching the app list.
+        // Instead, remember that setup was dismissed and continue into the main
+        // screen in a degraded (main-profile-only) mode.
+        mStorage.setBoolean(LocalStorageManager.PREF_HAS_SETUP, true);
+        mStorage.setBoolean(LocalStorageManager.PREF_IS_SETTING_UP, false);
+        init();
     }
 
     private void bindServices() {
@@ -142,12 +157,13 @@ public class MainActivity extends AppCompatActivity {
         try {
             Utility.transferIntentToProfile(this, intent);
         } catch (IllegalStateException e) {
-            // This exception implies a missing work profile, NOT a disabled work profile
-            // which means that the work profile does not even exist
-            // in the first place.
-            mStorage.setBoolean(LocalStorageManager.PREF_HAS_SETUP, false);
+            // This exception implies a missing work profile, NOT a disabled work
+            // profile. Upstream Shelter resets the setup flag and finishes here,
+            // which throws the user back to the calculator and restarts the
+            // setup wizard on the next unlock. Keep the flag, show a hint and
+            // stay on the main screen with the main-profile app list instead.
             Toast.makeText(this, getString(R.string.work_profile_not_found), Toast.LENGTH_LONG).show();
-            finish();
+            buildViewSafely();
             return;
         }
         mTryStartWorkService.launch(intent);
@@ -158,13 +174,12 @@ public class MainActivity extends AppCompatActivity {
             // RESULT_OK is from DummyActivity. The work profile is enabled!
             bindWorkService();
         } else {
-            // In this case, the user has been presented with a prompt
-            // to enable work mode, but we have no means to distinguish
-            // "ok" and "cancel", so the only way is to tell the user
-            // to start again.
+            // The user has been presented with a prompt to enable work mode.
+            // Do not finish (that would bounce back to the calculator); show
+            // the main-profile app list in degraded mode instead.
             Toast.makeText(this,
                     getString(R.string.work_mode_disabled), Toast.LENGTH_LONG).show();
-            finish();
+            buildViewSafely();
         }
     }
 
@@ -183,7 +198,10 @@ public class MainActivity extends AppCompatActivity {
             mServiceWork = IShelterService.Stub.asInterface(binder);
             registerStartActivityProxies();
             startKiller();
-            buildView();
+            buildViewSafely();
+        } else {
+            // Could not bind the work-profile service: still show the main screen.
+            buildViewSafely();
         }
     }
 
@@ -200,11 +218,23 @@ public class MainActivity extends AppCompatActivity {
         startService(intent);
     }
 
+    private void buildViewSafely() {
+        if (mViewBuilt) return;
+        mViewBuilt = true;
+        buildView();
+    }
+
     private void buildView() {
         // Finally we can build the view
         // Find all the views
         ViewPager2 pager = findViewById(R.id.main_pager);
         BottomNavigationView nav = findViewById(R.id.main_bottom_navigation);
+
+        // Without a work profile we can only show the main-profile list.
+        if (mServiceWork == null) {
+            MenuItem workTab = nav.getMenu().findItem(R.id.bottom_navigation_work);
+            if (workTab != null) workTab.setVisible(false);
+        }
 
         // Initialize the ViewPager and the tab
         // All the remaining work will be done in the fragments
@@ -223,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public int getItemCount() {
-                return 2;
+                return mServiceWork == null ? 1 : 2;
             }
         });
         pager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
@@ -321,6 +351,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        // Go back to the calculator (the disguised launcher) instead of exiting
+        // straight to the home screen.
+        Intent intent = new Intent(this, CalculatorActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        startActivity(intent);
+        finish();
+    }
+
+    // NOTE: Do NOT override onUserLeaveHint() here to force a "lock".
+    // MainActivity starts SetupWizardActivity (and other activities) internally;
+    // any startActivity() makes the system call onUserLeaveHint() on the outgoing
+    // activity, so such a hook would kick the user back to the calculator right in
+    // the middle of Shelter's setup flow. Returning to the calculator on a real
+    // "leave the app" is handled by the launcher task instead:
+    // CalculatorActivity (singleTask + clearTaskOnLaunch) stays as the task root,
+    // so re-launching from the home screen finishes everything above it.
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
 
@@ -344,12 +393,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onTrimMemory(int level) {
         super.onTrimMemory(level);
-        if (level >= TRIM_MEMORY_BACKGROUND && mServiceMain != null) {
-            // We actually do not need to be in the background at all
-            // (except when we are still waiting for provision to finish)
-            // Just.. do not keep me at all.. please.
-            // This is a dirty hack to ensure that the foreground service in work profile
-            // will be killed along with this activity
+        // Upstream Shelter finishes here so the work-profile foreground service
+        // dies with the activity. In the disguised build that is unsafe:
+        // provisioning runs in a system Activity, so our UI is briefly fully
+        // hidden and TRIM_MEMORY_BACKGROUND would destroy MainActivity while
+        // its setup-wizard ActivityResult is still pending, breaking the unlock
+        // flow. Only keep the old behaviour in the real two-profile mode.
+        if (level >= TRIM_MEMORY_BACKGROUND && mServiceMain != null && mServiceWork != null) {
             finish();
         }
     }

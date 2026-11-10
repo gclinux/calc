@@ -46,7 +46,11 @@ public class LocalStorageManager {
     }
 
     public boolean getBoolean(String pref) {
-        return mPrefs.getBoolean(pref, false);
+        return getBoolean(pref, false);
+    }
+
+    public boolean getBoolean(String pref, boolean defaultValue) {
+        return mPrefs.getBoolean(pref, defaultValue);
     }
 
     public void setBoolean(String pref, boolean value) {

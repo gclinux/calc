@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Wissenschaftlicher Rechner</string>
+    <string name="app_name">Wissenschaftlicher Rechner</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Rechner</string>
     <string name="first_run_alert_cancel">Beenden</string>
     <string name="first_run_alert_continue">Fortsetzen</string>
     <string name="first_run_alert">Sie sind dabei, Shelter (dt. \"Bunker\") zu installieren. 
@@ -127,4 +131,18 @@
     <string name="payment_stub_description">Zahlungsdienst Platzhalter (NICHT VERWENDEN)</string>
     <string name="settings_payment_stub">Zahlungsdienst-Platzhalter</string>
     <string name="settings_payment_stub_desc">Richten Sie einen unechten NFC Zahlungsdienst im Hauptprofil ein, so dass die kontaktlosen Zahlungsoptionen unter Einstellungen - NFC aktiviert werden. So kann ein Zahlungsanbieter im Arbeitsprofil eingerichtet und gewählt werden. Damit wird ein Fehler in Android umgangen, der es unmöglich macht, im Arbeitsprofil einen Zahlungsanbieter auszuwählen, wenn kein Zahlungsdienst im Hauptprofil verfügbar ist.</string>
+    <string name="calc_key_sound">Tastenton</string>
+    <string name="calc_check_update">Aktualisierungen prüfen</string>
+    <string name="calc_password_title">Privaten Bereich entsperren</string>
+    <string name="calc_password_hint">Passwort</string>
+    <string name="calc_password_set_title">Erstpasswort festlegen</string>
+    <string name="calc_password_confirm_hint">Passwort bestätigen</string>
+    <string name="calc_password_mismatch">Passwörter stimmen nicht überein</string>
+    <string name="calc_password_incorrect">Falsches Passwort</string>
+    <string name="calc_password_set_success">Passwort erfolgreich gesetzt</string>
+    <string name="calc_update_checking">Aktualisierungen werden geprüft…</string>
+    <string name="calc_update_up_to_date">Sie sind auf dem neuesten Stand</string>
+    <string name="calc_unlock_title">Tippe "Rechner" zum Entsperren</string>
+    <string name="calc_unlock_prompt">Passwort eingeben und auf den Titel tippen, um zu entsperren</string>
+    <string name="calc_about">Über</string>
 </resources>

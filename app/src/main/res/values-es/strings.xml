@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Calculadora científica</string>
+    <string name="app_name">Calculadora científica</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Calculadora</string>
     <string name="service_title">Servicio Shelter</string>
     <string name="service_desc">Shelter se esta ejecutando actualmente…</string>
     <string name="service_auto_freeze_title">Suspensión automática pendiente</string>
@@ -112,4 +116,18 @@
     <string name="settings_auto_freeze_service_desc">Cuando la pantalla esta bloqueada, automáticamente suspende las aplicaciones iniciadas con \"Acceso directo a Reanudar e iniciar\".</string>
     <string name="settings_dont_freeze_foreground">Omitir aplicaciones de fondo</string>
     <string name="settings_about">Acerca de</string>
+    <string name="calc_key_sound">Sonido de teclas</string>
+    <string name="calc_check_update">Buscar actualizaciones</string>
+    <string name="calc_password_title">Desbloquear espacio privado</string>
+    <string name="calc_password_hint">Contraseña</string>
+    <string name="calc_password_set_title">Establecer contraseña inicial</string>
+    <string name="calc_password_confirm_hint">Confirmar contraseña</string>
+    <string name="calc_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="calc_password_incorrect">Contraseña incorrecta</string>
+    <string name="calc_password_set_success">Contraseña establecida correctamente</string>
+    <string name="calc_update_checking">Buscando actualizaciones…</string>
+    <string name="calc_update_up_to_date">Tienes la última versión</string>
+    <string name="calc_unlock_title">Toca "Calculadora" para desbloquear</string>
+    <string name="calc_unlock_prompt">Introduce la contraseña y toca el título para desbloquear</string>
+    <string name="calc_about">Acerca de</string>
 </resources>

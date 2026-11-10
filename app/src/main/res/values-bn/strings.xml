@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">বৈজ্ঞানিক ক্যালকুলেটর</string>
+    <string name="app_name">বৈজ্ঞানিক ক্যালকুলেটর</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">ক্যালকুলেটর</string>
     <string name="first_run_alert_cancel">বিদায়</string>
+    <string name="calc_key_sound">বাটনের শব্দ</string>
+    <string name="calc_check_update">আপডেট চেক করুন</string>
+    <string name="calc_password_title">ব্যক্তিগত স্থান আনলক করুন</string>
+    <string name="calc_password_hint">পাসওয়ার্ড</string>
+    <string name="calc_password_set_title">প্রাথমিক পাসওয়ার্ড সেট করুন</string>
+    <string name="calc_password_confirm_hint">পাসওয়ার্ড নিশ্চিত করুন</string>
+    <string name="calc_password_mismatch">পাসওয়ার্ড মিলছে না</string>
+    <string name="calc_password_incorrect">ভুল পাসওয়ার্ড</string>
+    <string name="calc_password_set_success">পাসওয়ার্ড সফলভাবে সেট হয়েছে</string>
+    <string name="calc_update_checking">আপডেট চেক হচ্ছে…</string>
+    <string name="calc_update_up_to_date">আপনার সংস্করণ সাম্প্রতিক</string>
+    <string name="calc_unlock_title">আনলক করতে "ক্যালকুলেটর" ট্যাপ করুন</string>
+    <string name="calc_unlock_prompt">পাসওয়ার্ড লিখুন এবং আনলক করতে শিরোনামে ট্যাপ করুন</string>
+    <string name="calc_about">সম্পর্কে</string>
 </resources>

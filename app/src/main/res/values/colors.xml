@@ -11,4 +11,7 @@
     <color name="disabledAppBackground">#E0F2F1</color>
     <color name="selectedAppBackground">#E1E9E8</color>
     <color name="selectedAndDisabledAppBackground">#CEE1E0</color>
+    <color name="calcButtonNumber">#E0F2F1</color>
+    <color name="calcButtonFunction">#B2DFDB</color>
+    <color name="calcButtonOperator">#FF9800</color>
 </resources>

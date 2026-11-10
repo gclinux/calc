@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Calculator științific</string>
+    <string name="app_name">Calculator științific</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Calculator</string>
     <string name="first_run_alert_cancel">La revedere</string>
     <string name="first_run_alert_continue">Continuă</string>
     <string name="device_admin_desc">Serviciu de izolare a aplicațiilor</string>
@@ -123,4 +127,18 @@
 \nÎn caz contrar, dacă nu ați anulat manual configurarea, atunci motivul eșecului este cel mai frecvent din cauza unui sistem puternic modificat sau a unui conflict între Shelter și alți manageri de profil de lucru. Din păcate, nu am putea face mare lucru în acest sens.
 \n
 \nFaceți clic pe „Next” pentru a ieși.</string>
+    <string name="calc_key_sound">Sunet taste</string>
+    <string name="calc_check_update">Verifică actualizări</string>
+    <string name="calc_password_title">Deblochează spațiul privat</string>
+    <string name="calc_password_hint">Parolă</string>
+    <string name="calc_password_set_title">Setează parola inițială</string>
+    <string name="calc_password_confirm_hint">Confirmă parola</string>
+    <string name="calc_password_mismatch">Parolele nu se potrivesc</string>
+    <string name="calc_password_incorrect">Parolă incorectă</string>
+    <string name="calc_password_set_success">Parola a fost setată cu succes</string>
+    <string name="calc_update_checking">Se verifică actualizările…</string>
+    <string name="calc_update_up_to_date">Aveți cea mai recentă versiune</string>
+    <string name="calc_unlock_title">Atingeți "Calculator" pentru deblocare</string>
+    <string name="calc_unlock_prompt">Introduceți parola și atingeți titlul pentru deblocare</string>
+    <string name="calc_about">Despre</string>
 </resources>

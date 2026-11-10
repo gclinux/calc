@@ -37,6 +37,26 @@ def getVersionName = { ->
     }
 }
 
+// Version of the calculator-disguise release build. Kept independent from the
+// upstream git-tag based scheme so releases stay reproducible on any checkout.
+def calcVersionCode = Integer.parseInt(
+        (project.findProperty('calcVersionCode') ?: '1000').toString())
+def calcVersionName = (project.findProperty('calcVersionName') ?: '1.0.0-calc').toString()
+
+// Release signing credentials live ONLY in local.properties (gitignored).
+// Without them the release build still succeeds but produces an unsigned APK.
+def signingProps = new Properties()
+def localPropsFile = rootProject.file('local.properties')
+if (localPropsFile.exists()) {
+    localPropsFile.withInputStream { signingProps.load(it) }
+}
+def calcKeystorePath = signingProps.getProperty('calc.release.keystore')
+def calcStorePassword = signingProps.getProperty('calc.release.storePassword')
+def calcKeyAlias = signingProps.getProperty('calc.release.keyAlias')
+def calcKeyPassword = signingProps.getProperty('calc.release.keyPassword') ?: calcStorePassword
+def hasReleaseSigning = calcKeystorePath != null && calcStorePassword != null &&
+        calcKeyAlias != null && file(calcKeystorePath).exists()
+
 android {
     compileSdk 35
     buildToolsVersion = '35.0.0'
@@ -48,16 +68,34 @@ android {
         versionName getVersionName()
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        if (hasReleaseSigning) {
+            calcRelease {
+                storeFile file(calcKeystorePath)
+                storePassword calcStorePassword
+                keyAlias calcKeyAlias
+                keyPassword calcKeyPassword
+            }
+        }
+    }
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (hasReleaseSigning) {
+                signingConfig signingConfigs.calcRelease
+            }
         }
     }
     applicationVariants.all { variant ->
         if (variant.name == "debug") {
             variant.outputs.each { o -> o.versionCodeOverride = System.currentTimeSeconds() }
+        } else if (variant.name == "release") {
+            variant.outputs.each { o ->
+                o.versionCodeOverride = calcVersionCode
+                o.versionNameOverride = calcVersionName
+            }
         }
     }
     compileOptions {
@@ -86,5 +124,25 @@ dependencies {
     releaseImplementation project(path: ':setup-wizard-lib', configuration: 'gingerbreadCompatReleaseRuntimeElements')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.6.0-alpha04'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.0-alpha01'
+    androidTestImplementation 'androidx.test:espresso:espresso-core:3.6.0-alpha01'
+}
+
+// Workaround for a Windows-only AIDL issue:
+// aidl.exe embeds its raw command line (with backslashes) in the header comment
+// of the generated .java files. javac then treats "\U" (from "\Users\...")
+// as the start of a Unicode escape and fails with "illegal Unicode escape".
+// Normalize that single comment line to use forward slashes after each AIDL run.
+afterEvaluate {
+    tasks.matching { it.name.startsWith('compile') && it.name.endsWith('Aidl') }.configureEach {
+        doLast {
+            def aidlOut = new File(buildDir, 'generated/aidl_source_output_dir')
+            if (!aidlOut.isDirectory()) return
+            aidlOut.eachFileRecurse(groovy.io.FileType.FILES) { f ->
+                if (!f.name.endsWith('.java')) return
+                def text = f.getText('UTF-8')
+                def fixed = text.replaceAll(/(?m)^ \* Using:.*$/) { it.replace('\\', '/') }
+                if (fixed != text) f.setText(fixed, 'UTF-8')
+            }
+        }
+    }
 }

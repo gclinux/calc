@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">関数電卓</string>
+    <string name="app_name">関数電卓</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">計算</string>
     <string name="first_run_alert_cancel">終了</string>
     <string name="first_run_alert_continue">続行</string>
     <string name="device_admin_desc">アプリ隔離サービス</string>
@@ -123,4 +127,18 @@
 \nそうでなければ、あなたが途中でセットアップをキャンセルしたわけではない場合、失敗の原因は、システムが大きく変更されているか、Shelterと他の仕事用プロファイルマネージャーとの間で競合が発生していることがほとんどです。残念ながら、これに対してできることはあまりありません。
 \n
 \nNext \"をタップして終了します。</string>
+    <string name="calc_key_sound">キー音</string>
+    <string name="calc_check_update">更新を確認</string>
+    <string name="calc_password_title">プライベート空間のロック解除</string>
+    <string name="calc_password_hint">パスワード</string>
+    <string name="calc_password_set_title">初期パスワードを設定</string>
+    <string name="calc_password_confirm_hint">パスワードを確認</string>
+    <string name="calc_password_mismatch">パスワードが一致しません</string>
+    <string name="calc_password_incorrect">パスワードが正しくありません</string>
+    <string name="calc_password_set_success">パスワードを設定しました</string>
+    <string name="calc_update_checking">更新を確認中…</string>
+    <string name="calc_update_up_to_date">最新バージョンです</string>
+    <string name="calc_unlock_title">"電卓"をタップしてロック解除</string>
+    <string name="calc_unlock_prompt">パスワードを入力し、タイトルをタップしてロック解除</string>
+    <string name="calc_about">このアプリについて</string>
 </resources>

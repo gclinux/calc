@@ -7,4 +7,7 @@
     <color name="disabledAppBackground">@android:color/system_accent1_800</color>
     <color name="selectedAppBackground">@android:color/system_accent1_900</color>
     <color name="selectedAndDisabledAppBackground">@android:color/system_accent1_700</color>
+    <color name="calcButtonNumber">@android:color/system_accent1_800</color>
+    <color name="calcButtonFunction">@android:color/system_accent1_700</color>
+    <color name="calcButtonOperator">#FF9800</color>
 </resources>

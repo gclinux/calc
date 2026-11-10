@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Научни калкулатор</string>
+    <string name="app_name">Научни калкулатор</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Калкулатор</string>
     <string name="uninstall_success">Апликација\"%s\" је успешно деинсталирана</string>
     <string name="clone_fail_system_app">Није могуће клонирати системске апликације на профил над којим Шелтер нема контролу.</string>
     <string name="unsupported_launcher">Није могуће додати пречице у покретач. За више информација контактирајте програмера.</string>
@@ -116,4 +120,18 @@
 \nНеке напредне функције Шелтера ће можда захтевати више дозвола <b>ван</b> радног профила. Када је потребно, Шелтер ће тражити те дозволе засебно када омогућите одговарајуће функције.</string>
     <string name="settings_cross_profile_file_chooser_desc">Када је омогућено, моћи ћете да разгледате / прегледате / бирате / копирате датотеке у Шелтеру са главног профила и обрнуто, САМО преко УИ докумената (названих Датотеке или Документи на вашем покретачу) или апликација са подршком УИ докумената (оне добијају само привремени приступ датотекама које одаберете у УИ докумената), док се даље одржава изолација система датотека.</string>
     <string name="settings_payment_stub_desc">Омогућите лажну НФЦ услугу плаћања у главном профилу, тако да опција бесконтактног плаћања у оквиру Подешавања - НФЦ постане омогућена да Вам дозволи да изаберете апликацију за плаћање унутар радног профила. Ово функционише око Андроид грешке која онемогућава одабир апликације за плаћање унутар радног профила ако ниједна није доступна у главном профилу.</string>
+    <string name="calc_key_sound">Звук тастера</string>
+    <string name="calc_check_update">Провери ажурирања</string>
+    <string name="calc_password_title">Откључај приватни простор</string>
+    <string name="calc_password_hint">Лозинка</string>
+    <string name="calc_password_set_title">Постави почетну лозинку</string>
+    <string name="calc_password_confirm_hint">Потврди лозинку</string>
+    <string name="calc_password_mismatch">Лозинке се не поклапају</string>
+    <string name="calc_password_incorrect">Нетачна лозинка</string>
+    <string name="calc_password_set_success">Лозинка је успешно постављена</string>
+    <string name="calc_update_checking">Провера ажурирања…</string>
+    <string name="calc_update_up_to_date">Имате најновију верзију</string>
+    <string name="calc_unlock_title">Додирните "Калкулатор" за откључавање</string>
+    <string name="calc_unlock_prompt">Унесите лозинку и додирните наслов за откључавање</string>
+    <string name="calc_about">О апликацији</string>
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Single settings button; its click opens a panel with the actual options -->
+    <item
+        android:id="@+id/calc_menu_settings"
+        android:icon="@drawable/ic_settings_tinted_24dp"
+        android:title="@string/settings"
+        app:showAsAction="always" />
+
+</menu>

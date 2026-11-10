@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Kalkulator Ilmiah</string>
+    <string name="app_name">Kalkulator Ilmiah</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Kalkulator</string>
     <string name="first_run_alert_cancel">Selamat tinggal</string>
     <string name="first_run_alert_continue">Lanjutkan</string>
     <string name="device_admin_explanation">Shelter harus menjadi Admin Perangkat untuk melakukan tugas isolasinya.</string>
@@ -116,4 +120,18 @@
     <string name="settings_payment_stub">Rintisan Layanan Pembayaran</string>
     <string name="settings_payment_stub_desc">Aktifkan layanan pembayaran NFC palsu di profil utama, sehingga opsi pembayaran nirsentuh di bawah Pengaturan - NFC diaktifkan untuk memungkinkan Anda memilih aplikasi pembayaran di dalam profil kerja. Ini mengatasi bug Android yang membuat aplikasi pembayaran di dalam profil kerja tidak dapat dipilih jika tidak ada yang tersedia di profil utama.</string>
     <string name="allow_cross_profile_interaction">Izinkan Interaksi Lintas Profil</string>
+    <string name="calc_key_sound">Suara tombol</string>
+    <string name="calc_check_update">Periksa pembaruan</string>
+    <string name="calc_password_title">Buka kunci ruang pribadi</string>
+    <string name="calc_password_hint">Kata sandi</string>
+    <string name="calc_password_set_title">Atur kata sandi awal</string>
+    <string name="calc_password_confirm_hint">Konfirmasi kata sandi</string>
+    <string name="calc_password_mismatch">Kata sandi tidak cocok</string>
+    <string name="calc_password_incorrect">Kata sandi salah</string>
+    <string name="calc_password_set_success">Kata sandi berhasil diatur</string>
+    <string name="calc_update_checking">Memeriksa pembaruan…</string>
+    <string name="calc_update_up_to_date">Anda sudah menggunakan versi terbaru</string>
+    <string name="calc_unlock_title">Ketuk "Kalkulator" untuk membuka kunci</string>
+    <string name="calc_unlock_prompt">Masukkan kata sandi dan ketuk judul untuk membuka kunci</string>
+    <string name="calc_about">Tentang</string>
 </resources>

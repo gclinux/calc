@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="device_admin_label">Vetenskaplig kalkylator</string>
+    <string name="app_name">Vetenskaplig kalkylator</string>
+    <!-- Tappable title on the calculator toolbar -->
+    <string name="calc_title">Kalkylator</string>
     <string name="service_auto_freeze_now">Frys Nu</string>
     <string name="app_installing">Installerar...</string>
     <string name="settings_dont_freeze_foreground">Hoppa över förgrundsappar</string>
@@ -112,4 +116,18 @@
     <string name="list_item_disabled">[Frusen] %s</string>
     <string name="clone_to_work_profile">Klona till Shelter (arbetsprofil)</string>
     <string name="request_system_alert">Shelter måste <b>Rita över andra appar</b> för att File Shuttle ska fungera korrekt. Vänligen aktivera behörigheten för <b>BÅDA TVÅ </b> Shelter-appar som visas i dialogrutan efter att du tryckt på \"OK\". Denna behörighet används för att kunna starta File Shuttle-tjänster i bakgrunden.</string>
+    <string name="calc_key_sound">Knapplyd</string>
+    <string name="calc_check_update">Sök efter uppdateringar</string>
+    <string name="calc_password_title">Lås upp privat utrymme</string>
+    <string name="calc_password_hint">Lösenord</string>
+    <string name="calc_password_set_title">Ange initialt lösenord</string>
+    <string name="calc_password_confirm_hint">Bekräfta lösenord</string>
+    <string name="calc_password_mismatch">Lösenorden matchar inte</string>
+    <string name="calc_password_incorrect">Felaktigt lösenord</string>
+    <string name="calc_password_set_success">Lösenordet har angetts</string>
+    <string name="calc_update_checking">Söker efter uppdateringar…</string>
+    <string name="calc_update_up_to_date">Du har den senaste versionen</string>
+    <string name="calc_unlock_title">Tryck på "Kalkylator" för att låsa upp</string>
+    <string name="calc_unlock_prompt">Ange lösenord och tryck på titeln för att låsa upp</string>
+    <string name="calc_about">Om</string>
 </resources>
