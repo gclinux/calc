@@ -6,7 +6,7 @@ Shelter
 > [计算器伪装版使用说明](#计算器伪装版使用说明)。
 
 Shelter is a Free and Open-Source (FOSS) app that leverages the "Work Profile" feature of Android to provide an isolated space that you can install or clone apps into.
-
+Shelter(庇护所) 是一款免费且开源的应用程序，它利用了 Android 系统的“工作模式”功能，能够提供一个独立的空间，用户可以在其中安装或克隆及冻结应用程序。
 
 计算器伪装版使用说明
 ===
