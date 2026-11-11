@@ -88,3 +88,17 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.6.0-alpha04'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.0-alpha01'
 }
+
+// Workaround for AIDL on Windows generating header comments with backslashes
+// that the Java compiler interprets as invalid Unicode escapes.
+tasks.withType(JavaCompile) {
+    doFirst {
+        fileTree(dir: "$buildDir/generated/aidl_source_output_dir", include: '**/*.java').each { file ->
+            String text = file.text
+            // The AIDL tool writes Windows paths into the header comment; backslashes
+            // such as \u are misinterpreted as Unicode escapes by javac.
+            text = text.replaceAll(/(?m)^ \* Using:.*$/) { it.replace('\\', '/') }
+            file.text = text
+        }
+    }
+}

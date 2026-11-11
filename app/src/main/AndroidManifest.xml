@@ -40,6 +40,7 @@
 
         <!-- The main activity for UI -->
         <activity android:name=".ui.MainActivity"
+            android:theme="@style/CalcAppTheme"
             android:launchMode="singleTask"
             android:exported="true">
             <intent-filter>
@@ -47,6 +48,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- The real Shelter interface, hidden behind the calculator facade -->
+        <activity android:name=".ui.ShelterMainActivity"
+            android:launchMode="singleTask"
+            android:exported="false" />
 
         <!-- Setup Wizard -->
         <activity android:name=".ui.SetupWizardActivity"

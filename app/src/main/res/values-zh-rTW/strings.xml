@@ -123,4 +123,52 @@
 \n
 \n單擊下一步退出。</string>
     <string name="setup_wizard_action_required">需要採取的行動</string>
+
+    <!-- Calculator facade (Traditional Chinese) -->
+    <string name="app_name">科學計算機</string>
+    <string name="calc_0">0</string>
+    <string name="calc_1">1</string>
+    <string name="calc_2">2</string>
+    <string name="calc_3">3</string>
+    <string name="calc_4">4</string>
+    <string name="calc_5">5</string>
+    <string name="calc_6">6</string>
+    <string name="calc_7">7</string>
+    <string name="calc_8">8</string>
+    <string name="calc_9">9</string>
+    <string name="calc_dot">.</string>
+    <string name="calc_ac">AC</string>
+    <string name="calc_plus_minus">+/-</string>
+    <string name="calc_percent">%</string>
+    <string name="calc_op_plus">+</string>
+    <string name="calc_op_minus">-</string>
+    <string name="calc_op_multiply">×</string>
+    <string name="calc_op_divide">÷</string>
+    <string name="calc_op_equals">=</string>
+    <string name="calc_mc">mc</string>
+    <string name="calc_mp">m+</string>
+    <string name="calc_mm">m-</string>
+    <string name="calc_mr">mr</string>
+    <string name="calc_backspace">刪除</string>
+    <string name="calc_history_hint">歷史紀錄</string>
+    <string name="calc_functions_hint">功能</string>
+    <string name="calc_memory_hint">記憶體</string>
+    <string name="calc_settings_title">設定</string>
+    <string name="calc_settings_sound_on">開啟提示音</string>
+    <string name="calc_settings_sound_off">關閉提示音</string>
+    <string name="calc_settings_check_update">檢查更新</string>
+    <string name="calc_settings_about">關於應用程式</string>
+    <string name="calc_sound_enabled">提示音已開啟</string>
+    <string name="calc_sound_disabled">提示音已關閉</string>
+    <string name="calc_already_latest_version">已經是最新版本</string>
+    <string name="calc_about_message">這是一個簡單的計算機。</string>
+    <string name="calc_set_password_title">設定密碼</string>
+    <string name="calc_set_password_message">請設定初始密碼以解鎖隱私空間。</string>
+    <string name="calc_password_hint">密碼</string>
+    <string name="calc_password_empty">密碼不能為空</string>
+    <string name="calc_password_set">密碼已設定</string>
+    <string name="calc_password_mode_entered">密碼模式</string>
+    <string name="calc_password_wrong">密碼錯誤</string>
+    <string name="calc_password_placeholder">請輸入密碼</string>
+    <string name="calc_password_mode_disabled">密碼模式下無法使用運算</string>
 </resources>

@@ -55,7 +55,7 @@ public class SetupWizardActivity extends AppCompatActivity {
         // instance of activity
         if (ACTION_PROFILE_PROVISIONED.equals(getIntent().getAction()) && Utility.isWorkProfileAvailable(this)) {
             // ...in which case we should finish immediately and go back to MainActivity
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, ShelterMainActivity.class));
             finish();
             return;
         }

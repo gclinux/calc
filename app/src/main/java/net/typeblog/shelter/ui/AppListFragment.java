@@ -137,10 +137,10 @@ public class AppListFragment extends BaseFragment {
                 .registerReceiver(mRefreshReceiver, new IntentFilter(BROADCAST_REFRESH));
         LocalBroadcastManager.getInstance(getContext())
                 .registerReceiver(mContextMenuClosedReceiver,
-                        new IntentFilter(MainActivity.BROADCAST_CONTEXT_MENU_CLOSED));
+                        new IntentFilter(ShelterMainActivity.BROADCAST_CONTEXT_MENU_CLOSED));
         LocalBroadcastManager.getInstance(getContext())
                 .registerReceiver(mSearchReceiver,
-                        new IntentFilter(MainActivity.BROADCAST_SEARCH_FILTER_CHANGED));
+                        new IntentFilter(ShelterMainActivity.BROADCAST_SEARCH_FILTER_CHANGED));
         refresh();
     }
 
@@ -230,7 +230,7 @@ public class AppListFragment extends BaseFragment {
                         mRefreshing = false;
                     });
                 }
-            }, ((MainActivity) getActivity()).mShowAll);
+            }, ((ShelterMainActivity) getActivity()).mShowAll);
         } catch (RemoteException e) {
             // Just... do nothing for now
         }
@@ -462,7 +462,7 @@ public class AppListFragment extends BaseFragment {
 
         try {
             if (isInstall) {
-                ((MainActivity) getActivity()).getOtherService(mIsRemote)
+                ((ShelterMainActivity) getActivity()).getOtherService(mIsRemote)
                         .installApp(app, callback);
             } else {
                 mService.uninstallApp(app, callback);

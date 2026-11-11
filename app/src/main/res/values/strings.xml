@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Shelter</string>
+    <string name="app_name">Scientific Calculator</string>
     <string name="first_run_alert_cancel">Bye</string>
     <string name="first_run_alert_continue">Continue</string>
     <string name="device_admin_label" translatable="false">Shelter</string>
@@ -117,4 +117,51 @@
 
     <!-- Formats -->
     <string name="format_minutes">%d min</string>
+
+    <!-- Calculator facade -->
+    <string name="calc_0">0</string>
+    <string name="calc_1">1</string>
+    <string name="calc_2">2</string>
+    <string name="calc_3">3</string>
+    <string name="calc_4">4</string>
+    <string name="calc_5">5</string>
+    <string name="calc_6">6</string>
+    <string name="calc_7">7</string>
+    <string name="calc_8">8</string>
+    <string name="calc_9">9</string>
+    <string name="calc_dot">.</string>
+    <string name="calc_ac">AC</string>
+    <string name="calc_plus_minus">+/-</string>
+    <string name="calc_percent">%</string>
+    <string name="calc_op_plus">+</string>
+    <string name="calc_op_minus">-</string>
+    <string name="calc_op_multiply">×</string>
+    <string name="calc_op_divide">÷</string>
+    <string name="calc_op_equals">=</string>
+    <string name="calc_mc">mc</string>
+    <string name="calc_mp">m+</string>
+    <string name="calc_mm">m-</string>
+    <string name="calc_mr">mr</string>
+    <string name="calc_backspace">Backspace</string>
+    <string name="calc_history_hint">History</string>
+    <string name="calc_functions_hint">Functions</string>
+    <string name="calc_memory_hint">Memory</string>
+    <string name="calc_settings_title">Settings</string>
+    <string name="calc_settings_sound_on">Turn sound on</string>
+    <string name="calc_settings_sound_off">Turn sound off</string>
+    <string name="calc_settings_check_update">Check for updates</string>
+    <string name="calc_settings_about">About</string>
+    <string name="calc_sound_enabled">Sound on</string>
+    <string name="calc_sound_disabled">Sound off</string>
+    <string name="calc_already_latest_version">Already up to date</string>
+    <string name="calc_about_message">This is a simple calculator.</string>
+    <string name="calc_set_password_title">Set password</string>
+    <string name="calc_set_password_message">Set an initial password to unlock the private space.</string>
+    <string name="calc_password_hint">Password</string>
+    <string name="calc_password_empty">Password cannot be empty</string>
+    <string name="calc_password_set">Password set</string>
+    <string name="calc_password_mode_entered">Password mode</string>
+    <string name="calc_password_wrong">Wrong password</string>
+    <string name="calc_password_placeholder">Enter password</string>
+    <string name="calc_password_mode_disabled">Operations disabled in password mode</string>
 </resources>
