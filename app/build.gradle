@@ -45,11 +45,29 @@ android {
         minSdkVersion 24
         targetSdkVersion 35
         versionCode getVersionCode()
-        versionName getVersionName()
+        versionName "1.0.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        release {
+            def props = new Properties()
+            def propFile = rootProject.file('local.properties')
+            if (propFile.exists()) {
+                props.load(new FileInputStream(propFile))
+                def storePath = props['RELEASE_STORE_FILE']
+                if (storePath != null) {
+                    storeFile file(storePath)
+                    storePassword props['RELEASE_STORE_PASSWORD']
+                    keyAlias props['RELEASE_KEY_ALIAS']
+                    keyPassword props['RELEASE_KEY_PASSWORD']
+                }
+            }
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
